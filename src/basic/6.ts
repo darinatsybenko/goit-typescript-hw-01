@@ -1,14 +1,14 @@
-interface Mango {
+interface User {
   name: string;
   age: number;
   email: string;
-  address: {
+  address?: {
     city: string;
     country: string;
   };
 }
 
-let mango: Mango = {
+const mango: User = {
   name: "Mango",
   age: 30,
   email: "john@example.com",
@@ -18,13 +18,7 @@ let mango: Mango = {
   },
 };
 
-interface Poly {
-  name: string;
-  age: number;
-  email: string;
-}
-
-let poly: Poly = {
+const poly: User = {
   name: "Mango",
   age: 30,
   email: "john@example.com",
